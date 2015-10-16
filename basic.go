@@ -24,6 +24,7 @@ var (
 	}{
 		{"", compareMD5HashAndPassword}, // default compareFunc
 		{"{SHA}", compareShaHashAndPassword},
+		{"$2a$", bcrypt.CompareHashAndPassword},
 		{"$2y$", bcrypt.CompareHashAndPassword},
 	}
 )
